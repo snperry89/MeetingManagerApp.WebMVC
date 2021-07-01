@@ -56,11 +56,43 @@
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Meeting.cs" />
+    <Compile Include="Migrations\202106301640176_InitialCreate.cs" />
+    <Compile Include="Migrations\202106301640176_InitialCreate.Designer.cs">
+      <DependentUpon>202106301640176_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106302114201_AddedMuteRule.cs" />
+    <Compile Include="Migrations\202106302114201_AddedMuteRule.Designer.cs">
+      <DependentUpon>202106302114201_AddedMuteRule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106302149157_AddedOrganization.cs" />
+    <Compile Include="Migrations\202106302149157_AddedOrganization.Designer.cs">
+      <DependentUpon>202106302149157_AddedOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202107010433542_AddedForeignKeyRelations.cs" />
+    <Compile Include="Migrations\202107010433542_AddedForeignKeyRelations.Designer.cs">
+      <DependentUpon>202107010433542_AddedForeignKeyRelations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Organization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202106301640176_InitialCreate.resx">
+      <DependentUpon>202106301640176_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106302114201_AddedMuteRule.resx">
+      <DependentUpon>202106302114201_AddedMuteRule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106302149157_AddedOrganization.resx">
+      <DependentUpon>202106302149157_AddedOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202107010433542_AddedForeignKeyRelations.resx">
+      <DependentUpon>202107010433542_AddedForeignKeyRelations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

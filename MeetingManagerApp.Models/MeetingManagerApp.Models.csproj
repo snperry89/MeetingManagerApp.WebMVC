@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,6 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Meeting\MeetingDetail.cs" />
+    <Compile Include="Meeting\MeetingEdit.cs" />
+    <Compile Include="Meeting\MeetingListItem.cs" />
+    <Compile Include="Meeting\MeetingCreate.cs" />
+    <Compile Include="Organization\OrganizationCreate.cs" />
+    <Compile Include="Organization\OrganizationDetail.cs" />
+    <Compile Include="Organization\OrganizationEdit.cs" />
+    <Compile Include="Organization\OrganizationListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
