@@ -51,6 +51,7 @@
     <Compile Include="Organization\OrganizationEdit.cs" />
     <Compile Include="Organization\OrganizationListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\UserListItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MeetingManagerApp.Data\MeetingManagerApp.Data.csproj">

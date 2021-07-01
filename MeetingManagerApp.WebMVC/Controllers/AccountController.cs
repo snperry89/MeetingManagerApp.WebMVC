@@ -10,6 +10,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MeetingManagerApp.WebMVC.Models;
 using MeetingManagerApp.WebMVC.Data;
+using MeetingManagerApp.Models.User;
+using MeetingManagerApp.Services;
 
 namespace MeetingManagerApp.WebMVC.Controllers
 {
@@ -51,6 +53,23 @@ namespace MeetingManagerApp.WebMVC.Controllers
             {
                 _userManager = value;
             }
+        }
+
+        public ActionResult Index()
+        {
+            var userService = new UserService();
+            var users = userService.GetAllUsers();
+
+            var userList = users.Select(u =>
+            {
+                return new UserListItem()
+                {
+                    UserId = u.Id,
+                    UserName = u.UserName,
+                    Email = u.Email
+                };
+            }).ToList();
+            return View(userList);
         }
 
         //
